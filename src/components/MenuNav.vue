@@ -2,7 +2,7 @@
   <div>
    <ul>
      <li v-for="(link, index) in linkMenu" :key="index">
-       <a class="ls-link" :href="link.url">{{link.name}}</a>
+       <a :class="{active: link.active}" :href="link.url">{{link.name}}</a>
       </li>
    </ul>
   </div> 
@@ -83,7 +83,7 @@ li {
 
 a {
   display: inline-block;
-  &:hover {
+  &:hover, &.active {
     color: $primary-color;
     box-shadow: inset 0 -5px 0 $primary-color;
   }

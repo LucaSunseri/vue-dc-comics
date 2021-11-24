@@ -53,13 +53,34 @@
     </div>
 
     <div class="footer__bottom">
-      <div class="footer__bottom_left">
-        <div class="button">
-          <a href="#">SIGN-UP NOW!</a>
+      <div class="container">
+
+        <div class="footer__bottom_left">
+          <div class="button">
+            <a href="#">SIGN-UP NOW!</a>
+          </div>
         </div>
-      </div>
-      <div class="footer__bottom_right">
-          <span>FOLLOW US</span>
+        <div class="footer__bottom_right">
+            <span>FOLLOW US</span>
+            <ul>
+              <li>
+                <a href="#"><img src="../assets/img/footer-facebook.png" alt="Facebook"></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/footer-twitter.png" alt="Twitter"></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/footer-youtube.png" alt="Youtube"></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/footer-pinterest.png" alt="Pinterest"></a>
+              </li>
+              <li>
+                <a href="#"><img src="../assets/img/footer-periscope.png" alt="Periscope"></a>
+              </li>
+            </ul>
+        </div> 
+
       </div>
     </div>
 
@@ -112,10 +133,47 @@ export default {
 }
 
 .footer__bottom {
-  display: flex;
-  justify-content: space-between;
   padding: 40px;
   background-color: #303030;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__bottom_left {
+  .button {
+    border: 2px solid $primary-color;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: $primary-color;
+    }
+    a {
+      color: #fff;
+      font-size: 18px;
+    }
+  } 
+}
+
+.footer__bottom_right {
+  display: flex;
+  align-items: center;
+  span {
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  li {
+    display: inline-block;
+    margin-left: 15px;
+    img {
+      width: 30px;
+      &:hover {
+        filter: brightness(75%);
+      }
+    }
+  }
 }
 
 </style>
