@@ -3,7 +3,7 @@
     <div class="container">
 
       <div v-for="(box, index) in boxsShop" :Key="index" class="box">
-        <img :src="`../assets/img/${box.logo}`" :alt="box.name">
+        <img :src="require(`../assets/img/${box.logo}`)" :alt="box.name">
         <span>{{box.name}}</span>
       </div>
 
@@ -55,11 +55,15 @@ div {
     display: flex;
     .box {
       @include center;
-      padding: 20px;
+      flex-basis: calc(100% / 5);
+      padding: 20 15px;
       cursor: pointer;
       img {
-        width: 50px;
+        width: 35px;
         margin-right: 10px;
+      }
+      span {
+        font-size: 12px;
       }
     }
   }
