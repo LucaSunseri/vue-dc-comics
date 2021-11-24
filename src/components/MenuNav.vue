@@ -1,10 +1,12 @@
 <template>
   <div>
+
    <ul>
      <li v-for="(link, index) in linkMenu" :key="index">
        <a :class="{active: link.active}" :href="link.url">{{link.name}}</a>
       </li>
    </ul>
+   
   </div> 
 </template>
 
@@ -14,57 +16,57 @@ export default {
   data() {
     return {
       linkMenu: [
-      {
-        url: '#',
-        name: 'CHARACTERS',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'COMICS',
-        active: true,
-      },
-      {
-        url: '#',
-        name: 'MOVIES',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'TV',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'GAMES',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'COLLECTIBLES',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'VIDEOS',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'FANS',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'NEWS',
-        active: false,
-      },
-      {
-        url: '#',
-        name: 'SHOP',
-        active: false,
-      }
-    ]
+        {
+          url: '#',
+          name: 'CHARACTERS',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'COMICS',
+          active: true,
+        },
+        {
+          url: '#',
+          name: 'MOVIES',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'TV',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'GAMES',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'COLLECTIBLES',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'VIDEOS',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'FANS',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'NEWS',
+          active: false,
+        },
+        {
+          url: '#',
+          name: 'SHOP',
+          active: false,
+        }
+      ]
     }
   }
 
@@ -72,7 +74,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 @import "../assets/style/vars.scss";
 
 li {

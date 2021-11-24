@@ -1,11 +1,14 @@
 <template>
   <header class="container">
+
     <div class="header__left">
       <a href="#"><img src="../assets/img/dc-logo.png" alt="Logo Dc"></a>
     </div>
+    
       <div class="header__right">
         <MenuNav />
       </div>
+
   </header> 
 </template>
 
@@ -18,6 +21,7 @@ export default {
     MenuNav  
   }
 }
+
 </script>
 
 <style lang="scss" scoped>

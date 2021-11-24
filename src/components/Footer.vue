@@ -95,7 +95,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 @import "../assets/style/vars.scss";
 
 .footer__top {
