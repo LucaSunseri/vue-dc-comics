@@ -21,17 +21,19 @@ export default {
 <style lang="scss" scoped>
 
 .card {
-  width: 150px;
-  display: flex;
-  flex-direction: column;
+  width: calc(100% / 6);
+  padding: 10px;
+  cursor: pointer;
 }
 
 .card__img {
   width: 100%;
   height: 150px;
-  overflow: hidden;
   img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
   }
 }
 

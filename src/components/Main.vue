@@ -7,9 +7,9 @@
       </div>
 
       <div class="series">
-        <div v-for="(card, index) in contentCards" :key="index" class="series__box">
-          <Card :contentCard="card" />
-        </div>
+          <Card
+            v-for="(card, index) in contentCards" :key="index" :contentCard="card" 
+          />
       </div>
 
       <div class="button">
@@ -62,13 +62,6 @@ main {
     flex-wrap: wrap;
     margin-top: 30px;
     padding: 50px 10px;
-  }
-
-  .series__box {
-    display: flex;
-    justify-content: center;
-    flex-basis: calc(100% / 6);
-    padding: 10px 0;
   }
 
   .button {
