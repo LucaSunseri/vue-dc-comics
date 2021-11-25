@@ -122,7 +122,7 @@ export default {
       }
     }
     .col-img {
-      margin-left: 50px;
+      margin-left: auto;
       img {
         width: 500px;
         margin-top: -120px;
@@ -132,7 +132,7 @@ export default {
 }
 
 .footer__bottom {
-  padding: 40px;
+  padding: 40px 0;
   background-color: #303030;
   .container {
     display: flex;

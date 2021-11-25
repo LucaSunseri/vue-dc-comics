@@ -39,13 +39,15 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/style/vars.scss';
+@import '../assets/style/mixins.scss';
 
 main {
   background-color: rgba(0, 0, 0, 0.836);
+  padding: 25px 0;
   .title {
     position: relative;
     z-index: 100;
-    margin-top: -25px;
+    margin-top: -50px;
     h2 {
       display: inline-block;
       background-color: $primary-color;
@@ -67,6 +69,16 @@ main {
     justify-content: center;
     flex-basis: calc(100% / 6);
     padding: 10px 0;
+  }
+
+  .button {
+    @include center;
+    color: #fff;
+    cursor: pointer;
+    span {
+      background-color: $primary-color;
+      padding: 15px 50px;
+    }
   }
 
 }
